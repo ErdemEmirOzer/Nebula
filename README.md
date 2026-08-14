@@ -17,9 +17,17 @@ NEBULA is a single-player space exploration, extraction, logistics, and territor
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/strategic-map.png" width="32%" alt="NEBULA strategic map" />
-  <img src="docs/screenshots/resources-processing.png" width="32%" alt="NEBULA resource processing" />
-  <img src="docs/screenshots/progression-modules.png" width="32%" alt="NEBULA progression and modules" />
+  <strong>Strategic map — system and universe scales</strong>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/strategic-map.png" width="49%" alt="NEBULA strategic map system view" />
+  <img src="docs/screenshots/universe-map.png" width="49%" alt="NEBULA strategic map distant universe view" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/resources-processing.png" width="49%" alt="NEBULA resource processing" />
+  <img src="docs/screenshots/progression-modules.png" width="49%" alt="NEBULA progression and modules" />
 </p>
 
 ## Core gameplay
@@ -49,7 +57,7 @@ flowchart LR
 - Scout, Collector, Engineer, and Escort vehicles with physical missions and Mk upgrades
 - Shield/armor/hull combat with Laser, Plasma, and EM weapon profiles
 - Encounters, pirate bases, raids, salvage, repair, emergency shutdown, and intervention groups
-- Strategic map, navigation knowledge, signals, routes, POIs, anomalies, wrecks, and facilities
+- Universe-to-system strategic map, semantic zoom, navigation knowledge, signals, routes, POIs, anomalies, wrecks, and facilities
 - Level 1–100 progression and T1–T5 ship modules
 - Eleven tutorial chapters spanning flight through campaign/session management
 - Three save slots, three rotating backups per slot, migration, integrity checks, and autosave

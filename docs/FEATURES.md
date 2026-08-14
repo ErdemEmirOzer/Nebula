@@ -22,7 +22,7 @@ This map summarizes systems present in the current NEBULA source. “Implemented
 - Reproducible system names, star classes, compositions, resources, and POI manifests
 - Continuous physical interstellar travel without teleporting between systems
 - Floating-origin rebasing for large-coordinate precision
-- Strategic map, discovery knowledge, signal analysis, route planning, and frontier guarantees
+- Universe-to-system strategic map, semantic zoom, discovery knowledge, signal analysis, route planning, and frontier guarantees
 
 ## Streaming and simulation
 
