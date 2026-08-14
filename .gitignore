@@ -1,0 +1,57 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# IDE generated
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vs/
+.idea/
+.fleet/
+.vscode/
+
+# Test and local artifacts
+TestResults/
+TestReports/
+Artifacts/
+*.log
+*.tmp
+
+# OS/editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+
+# Private project media intentionally excluded from this public snapshot
+Assets/BrandSource/
+Assets/Resources/
+Assets/RuntimeVisuals/
+Assets/Scenes/
+Assets/Shaders/
+Assets/TextMesh Pro/
+Assets/VisualSource/
+UIDesign/
+MapDesign/
+TutorialDesign/
+Distribution/
+Audit/
+planning/

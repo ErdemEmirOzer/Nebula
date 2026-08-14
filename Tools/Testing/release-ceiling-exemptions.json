@@ -1,0 +1,23 @@
+{
+  "schema": "nebula-ceiling-exemptions/1",
+  "_comment": [
+    "Named, capped, justified exceptions to the 30s release-leaf ceiling in",
+    "playmode_gate.py. Every entry needs a fullName, a capSeconds it commits to, and",
+    "a reason in prose. An entry without a reason is refused; a leaf that exceeds its",
+    "own capSeconds is refused exactly as if it had no entry here. `plan` prints every",
+    "applied entry with its reason, and reports entries that have gone stale.",
+    "",
+    "Adding an entry is not a way to make a slow test pass. It is a way to make a",
+    "deliberate exception visible in the plan output and in the final report. If the",
+    "honest answer is that the test is a soak test, give it [Category(\"Soak\")]",
+    "instead -- that moves it to a lane where the ceiling does not apply, which is a",
+    "reclassification rather than an exception."
+  ],
+  "exemptions": [
+    {
+      "fullName": "Nebula.Tests.PlayMode.UiFinalLifecyclePerformanceTests.SaveLoadRestartAndReopen_GrowNothingAndLeaveNoStaleSubscriber",
+      "capSeconds": 75.0,
+      "reason": "34 real product transitions -- 24 save/loads, 6 restarts, 4 session reopens -- not an endurance ladder. Its unit of work is a whole session rebuild, so it is a genuine short regression that is merely expensive, and Agent 4 examined it and declined to reclassify it as Soak. Trimming the rounds would weaken real coverage to satisfy a number: the test's own documentation relies on the round count for signal-to-noise, since a per-rebuild leak of six objects rather than three thousand still has to clear the noise floor. Measured 54.3s; capped at 75s to leave headroom for machine variance while still refusing if it grows materially."
+    }
+  ]
+}
