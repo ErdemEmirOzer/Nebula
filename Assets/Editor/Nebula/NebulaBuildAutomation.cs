@@ -375,6 +375,11 @@ namespace Nebula.EditorTools
             notes.Add("EditorUserBuildSettings: development=false, connectProfiler=false, " +
                       "deepProfiling=false, allowDebugging=false, waitForPlayerConnection=false");
 
+            // Shaders the game resolves by name at runtime. Platform-independent, and
+            // ahead of the platform switches on purpose: a build that would render
+            // magenta should fail before any per-platform work is done.
+            notes.AddRange(NebulaRequiredShaders.Ensure());
+
             if (target == BuildTarget.StandaloneOSX)
             {
                 notes.Add(SetModuleProperty("UnityEditor.OSXStandalone.UserBuildSettings",

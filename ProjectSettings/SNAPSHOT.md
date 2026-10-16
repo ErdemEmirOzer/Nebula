@@ -1,6 +1,6 @@
 # Private project configuration snapshot
 
-The public source showcase intentionally omits the private Unity project's full `ProjectSettings` directory. Values below were read from the current private project on 2026-08-15.
+The public source showcase intentionally omits the private Unity project's full `ProjectSettings` directory. Values below were read from the current private project on 2026-10-16.
 
 | Setting | Value |
 | --- | --- |
@@ -12,5 +12,6 @@ The public source showcase intentionally omits the private Unity project's full 
 | Fullscreen mode | Fullscreen Window |
 | Resizable window | Disabled |
 | Input backend | Legacy Input Manager |
+| Render pipeline | Built-in; release builds register every shader the code resolves by name in Always Included Shaders (`NebulaRequiredShaders`) |
 
 `ProjectVersion.txt` is retained as the engine-version authority. Full settings, scenes, and media remain in the private working project.
